@@ -1,0 +1,12 @@
+*.vs
+*.tlog
+*.recipe
+*.ilk
+*.log
+*.obj
+*.enc
+*.pdb
+*.txt
+*.idb
+*.sln
+*.vcxproj*
