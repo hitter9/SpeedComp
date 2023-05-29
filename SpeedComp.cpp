@@ -19,6 +19,7 @@ int main()
     {
         newArr[i] = i;
     }
+    delete[] newArr;
     auto newEnd = chrono::system_clock::now();
     chrono::duration<double> newSec = newEnd - newStart;
     cout << "Время, затраченное на запись в динамический массив: " << endl;
@@ -45,7 +46,6 @@ int main()
     chrono::duration<double> pushVecSec = pushVecEnd - pushVecStart;
     cout << "Время, затраченное на запись в вектор через push_back без изначального указания размера:" << endl;
     cout << pushVecSec.count() << " сек" << endl;
-    delete[] newArr;
     system("pause");
     return 0;
 }
